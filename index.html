@@ -92,12 +92,28 @@
       <h2>contact</h2>
 	
       <p>
-  TCS Lab, Computer Sciences Block<br>
-  -------------------------------------<br>
-	529 Pamba, IIT MADRAS<br>
-	Chennai, India 600036<br>
 	shiladitya@alumni.iitm.ac.in<br>
   	shiladitya1991@gmail.com<br>
+
+<button onclick="myFunction()">Mobile No.</button>
+
+<p id="validate_answer"></p>
+
+<script>
+function myFunction() {
+  var text;
+  var letters = prompt("How many letters are there in the English Alphabet?");
+  switch(letters) {
+    case "26":
+      text = "You can contact me at +91 9038918610";
+      break;
+    default:
+      text = "Wrong Answer!";
+  }
+  document.getElementById("validate_answer").innerHTML = text;
+}
+</script>
+
       </p>
 
     </div>
